@@ -1,0 +1,177 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #e9f7ff;
+  color: #26292a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  flex-shrink: 0;
+  text-align: left;
+  margin: 40px 40px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+    display: flex;
+    vertical-align: middle;
+    margin: 0 0 20px 0;
+}
+.title div {
+    margin: 30px 0 0;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+    margin: 0px 20px 0 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+header h2 {
+  margin: 8px 0 20px;
+  font-weight: 400;
+  font-size: 1em;
+  /* color: #aaa; */
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 20px;
+  max-width: 700px;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 6px;
+}
+
+.filter-button, .year-button {
+  padding: 6px 12px;
+  border: 1px solid #26292a;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #e9f7ff;
+  color: #26292a;
+  font-size: 0.9em;
+  transition: 0.2s;
+}
+
+.filter-button:hover, .filter-button.active, .year-button:hover, .year-button.active {
+  background: #d9f1ff;
+  border-color: #a4d0ff;
+  color: #161718;
+}
+
+
+main {
+  flex-grow: 1;
+  padding: 0 40px;
+}
+
+.projects-container {
+    display:flex;
+    flex-direction: row;
+}
+
+.year-nav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  /* background: #1b1e24; */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #222;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #007bff;
+}
+
+.project-card figure {
+    margin: 0;
+}
+
+
+.project-card video, .project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-info h3 {
+  margin: 0 0 6px;
+  font-size: 1.1em;
+}
+
+.project-info p {
+  margin: 0 0 10px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.project-meta {
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    border-left: none;
+    border-top: 1px solid #222;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  header img {
+    width: 80px;
+    height: 80px;
+  }
+  header h1 {
+    font-size: 1.5em;
+  }
+  main {
+    padding: 20px;
+  }
+}

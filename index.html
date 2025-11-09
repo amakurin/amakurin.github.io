@@ -1,8 +1,164 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    </head>
-    <body>
-      <p>Under construction. Please check it out little bit later.</p>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Makurin — R&D Engineer</title>
+  <meta name="description" content="Alex Makurin — R&D Engineer / Consultant / Team Lead. Specializing in UAV Software, Helicopter Automation, Simulation, Computer Vision, Embedded Systems.">
+  <link rel="canonical" href="https://amakurin.github.io/">
+  <link rel="stylesheet" href="https://unpkg.com/modern-normalize/modern-normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alex Makurin",
+    "jobTitle": "R&D Engineer / Consultant / Team Lead",
+    "url": "https://amakurin.github.io/",
+    "knowsAbout": [
+      "UAV Software", "Helicopter Automation", "Simulation", "Computer Vision",
+      "Embedded Systems", "C++", "STM32", "ArduPilot", "Unreal Engine", "Jetson", "Godot"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="title"> 
+      <img src="assets/avatar.jpg" alt="Profile photo of Alex Makurin">
+      <div > 
+        <h1>Alex Makurin</h1>
+        <p class="subtitle" aria-label="Professional headline">R&amp;D Engineer / Consultant / Team Lead</p>
+      </div>
+    </div>
+    <nav class="filter-nav" aria-label="Project filters">
+      <div class="filters" role="group" aria-labelledby="industries-label">
+        <strong id="industries-label">Industries</strong>
+        <div class="filter-group" id="industry-filters">
+          <button class="filter-button" type="button">Helicopter Automation</button>
+          <button class="filter-button" type="button">UAVs Software</button>
+          <button class="filter-button" type="button">Simulation</button>
+          <button class="filter-button" type="button">Computer Vision</button>
+          <button class="filter-button" type="button">Embedded</button>
+        </div>
+      </div>
+      <div class="filters" role="group" aria-labelledby="stack-label">
+        <strong id="stack-label">Stack</strong>
+        <div class="filter-group" id="stack-filters">
+          <button class="filter-button" type="button">C++</button>
+          <button class="filter-button" type="button">Qt</button>
+          <button class="filter-button" type="button">Unreal Engine</button>
+          <button class="filter-button" type="button">OpenCV</button>
+          <button class="filter-button" type="button">Python</button>
+          <button class="filter-button" type="button">ArduPilot</button>
+          <button class="filter-button" type="button">STM32</button>
+          <button class="filter-button" type="button">Nvidia Jetson</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="projects-title" class="visually-hidden">Projects</h2>
+    <div class="projects-container">
+      <nav class="year-nav" aria-label="Filter by year">
+        <button class="year-button" type="button">2025</button>
+        <button class="year-button" type="button">2024</button>
+        <button class="year-button" type="button">2023</button>
+        <button class="year-button" type="button">2022</button>
+        <button class="year-button" type="button">2021</button>
+      </nav>
+      <section id="projects" aria-labelledby="projects-title">
+          <article class="project-card" 
+            data-year="2025" 
+            data-industries="Simulation,UAVs Software" 
+            data-stack="C++,Unreal Engine,Python">
+            <figure>
+              <video src="assets/demo2.mp4" poster="assets/sim-low-res2.jpg" muted loop aria-label="3D UAV Simulator demo video"></video>
+            </figure>
+            <div class="project-info">
+              <h3>Real-World 3D UAV Simulator with UDP streaming</h3>
+              <p>Modular 3D UAV Simulator with real-world 3D environments and low latency UDP video streaming</p>
+              <footer class="project-meta" aria-label="Project metadata">2025 | Simulation | C++ / Unreal Engine / Python</footer>
+            </div>
+          </article>
+
+          <article class="project-card" 
+            data-year="2025" 
+            data-industries="Computer Vision" 
+            data-stack="Python,GDAL,DJango,React">
+            <figure>
+              <video src="assets/demo2.mp4" poster="assets/thermal-pipelines.jpg" muted loop aria-label="Thermal Network Inspection demo video"></video>
+            </figure>
+            <div class="project-info">
+              <h3>Thermal Network Inspection with Drones</h3>
+              <p>A custom-built system for detecting heat loss and pipeline leaks in thermal distribution networks using aerial thermal imagery.</p>
+              <footer class="project-meta" aria-label="Project metadata">2025 | Computer Vision | Python / GDAL / DJango / React </footer>
+            </div>
+          </article>
+
+          <article class="project-card" 
+            data-year="2024" 
+            data-industries="Computer Vision,UAVs Software" 
+            data-stack="C++,GStreamer,Python,OpenCV,Nvidia Jetson">
+            <figure>
+              <video src="assets/demo2.mp4" poster="assets/sim-low-res.jpg" muted loop aria-label="3D UAV Simulator demo video"></video>
+            </figure>
+            <div class="project-info">
+              <h3>UAV Track & Follow System</h3>
+              <p>Low cost realtime (60FPS) onboard track and follow system. Tracking, Autopilot, Ground Control.</p>
+              <footer class="project-meta" aria-label="Project metadata">2024 | Computer Vision | C++ / GStreamer / Python / OpenCV / ArduPilot</footer>
+            </div>
+          </article>
+
+          <article class="project-card" 
+            data-year="2023" 
+            data-industries="Helicopter Automation,UAVs Software,Embedded" 
+            data-stack="C++,Qt,ArduPilot,Mavlink">
+            <figure>
+              <video src="assets/ch7dev-flight-short.mp4" poster="assets/ch7dev-flight.jpg" muted loop aria-label="Unmanned CH7 demo video"></video>
+            </figure>
+            <div class="project-info">
+              <h3>Light Civil Helicopter Automation (CH-7 Charlie)</h3>
+              <p>Flight Control Automation, Custom Governor, Digital Cockpit, Ground Control Station</p>
+              <footer class="project-meta" aria-label="Project metadata">2023 | Helicopter Automation | C++ / Qt / ArduPilot</footer>
+            </div>
+          </article>
+
+          <article class="project-card" 
+            data-year="2021,2022,2023,2024" 
+            data-industries="Helicopter Automation,UAVs Software,Embedded" 
+            data-stack="C++,Qt,ArduPilot,Mavlink">
+            <figure>
+              <video src="assets/eheli-powergrid.mp4" poster="assets/eheli-powergrid.jpg" muted loop aria-label="UAV-Heli Power grid inspection"></video>
+            </figure>
+            <div class="project-info">
+              <h3>UAV Software Development for Small Electric Helicopters</h3>
+              <p>Wind Turbine Inspections, Power Line Inspections, Ground Control Station, Custom Embedded Systems</p>
+              <footer class="project-meta" aria-label="Project metadata">2021-2024 | UAVs Software | C++ / Qt / STM32 / PX4 / ArduPilot</footer>
+            </div>
+          </article>
+
+          <article class="project-card" 
+            data-year="2021" 
+            data-industries="Helicopter Automation,Embedded,UAVs Software" 
+            data-stack="C++,Qt,STM32,PX4,DroneCAN">
+            <figure>
+              <video src="assets/ka26-test-auto.mp4" poster="assets/ka26.jpg" muted loop aria-label="Ka-26 Automation demo video"></video>
+            </figure>
+            <div class="project-info">
+              <h3>Ka-26 Automation Software</h3>
+              <p>Software for unmanned civilian helicopter Ka-26. STM32 + PX4 + DroneCAN integration.</p>
+              <footer class="project-meta" aria-label="Project metadata">2021 | Helicopter Automation | C++ / Qt / STM32 / PX4 / ArduPilot </footer>
+            </div>
+          </article>
+        </section>
+    </div>
+  </main>
+
+
+  <footer aria-label="Site footer"></footer>
+
+  <script src="main.js"></script>
+</body>
 </html>
